@@ -1,0 +1,8 @@
+*{
+    padding:0;/*Define tamanho interno de um elemento*/
+    margin:0;/*Define margem*/
+    border:0;/*Define borda*/
+    box-sizing: border-box;/*Define redimensionamento*/
+    text-decoration: none;/*Define decoração do texto*/
+    list-style: none;/*Define estilo da lista, bolinha ou numero*/
+}
