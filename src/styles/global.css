@@ -3,3 +3,13 @@
 @import "header.css";
 @import "main.css";
 @import "footer.css";
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+	background: linear-gradient(120deg, #6570b7 0 57%, #c3a23c 57% 100%);
+	padding: 8px;
+}

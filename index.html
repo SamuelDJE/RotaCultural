@@ -4,71 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Importando fontes -->
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Rota Cultural</title>
     <link rel="stylesheet" href="src/styles/global.css">
 </head>
 <body>
-    <!-- ======================================================
-        Header/Hero
-    ==========================================================-->
-        <header>
-            <img src="src/assets/imgs/Logo-RotaCultural.svg" alt="Logo Rota Cultural">
-            <div class="meio-header">
-                <nav></nav>
-                <div class="pesquisa"></div>
-            </div>
-            <div class="login-cadastro">
-                <button>Login</button>
-                <button>Cadastro</button>
-            </div>
-        </header>
+    <div class="page-frame">
+        <div class="hero-surface">
+            <div class="content-shell">
+                <header class="site-header">
+                    <a class="brand" href="#" aria-label="Rota Cultural">
+                        <img src="src/assets/imgs/Logo-RotaCultural.svg" alt="Logo Rota Cultural">
+                    </a>
 
-    <!-- ======================================================
-        Main
-    ==========================================================-->
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="text-hero">
-                    <h1></h1>
-                    <p></p>
-                </div>
-                <img src="" alt="">
-            </div>
-            <div class="hero-forms">
-                <div class="card-forms">
-                    <h2></h2>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card-forms">
-                    <h2></h2>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card-forms">
-                    <h2></h2>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </div>
-                <button></button>
-            </div>
-        </section>
-    </main>
+                    <div class="header-center">
+                        <nav class="main-nav" aria-label="Navegação principal">
+                            <a href="#">Destinos</a>
+                            <a href="#">Roteiros</a>
+                            <a href="#">Gastronomia</a>
+                            <a href="#">Hospedagem</a>
+                            <a href="#">Avaliações</a>
+                            <a href="#">Blogs</a>
+                        </nav>
 
-    <!-- ======================================================
-        Footer
-    ==========================================================-->
+                        <form class="search-bar" action="#" role="search">
+                            <input type="search" aria-label="Buscar" placeholder="">
+                            <button type="submit" aria-label="Buscar">
+                                <img src="src/assets/imgs/search-icon.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="header-actions">
+                        <a class="action action-alt" href="#">Cadastrar</a>
+                        <a class="action action-primary" href="#">Entrar</a>
+                    </div>
+                </header>
+
+                <main class="hero-main">
+                    <section class="hero">
+                        <div class="hero-inner">
+                            <div class="hero-copy">
+                                <h1><span class="headline-accent">DESCUBRA</span> CULTURAS<br>VIVA <span class="headline-highlight">EXPERIÊNCIAS</span></h1>
+                                <p>Monte roteiros culturais inteligentes com gastronomia, hospedagem, atrações e avaliações reais.</p>
+                            </div>
+
+                            <div class="hero-visual">
+                                <img src="src/assets/imgs/heroImg.svg" alt="Pessoa na praia com peixes na água">
+                            </div>
+
+                            <div class="hero-panel">
+                                <div class="panel-card">
+                                    <div class="panel-title">Para onde você vai?</div>
+                                    <div class="panel-body">
+                                        <img src="src/assets/imgs/mapa-icon-heroForms.svg" alt="">
+                                        <span>EX: Rio de Janeiro</span>
+                                    </div>
+                                </div>
+
+                                <div class="panel-card">
+                                    <div class="panel-title">Quantos Dias?</div>
+                                    <div class="panel-body">
+                                        <img src="src/assets/imgs/calendario-icon-heroForms.svg" alt="">
+                                        <span>EX: 3 Dias</span>
+                                    </div>
+                                </div>
+
+                                <div class="panel-card">
+                                    <div class="panel-title">Seu Estilo?</div>
+                                    <div class="panel-body">
+                                        <img src="src/assets/imgs/emoji-icon-heroForms.svg" alt="">
+                                        <span>Selecione estilo</span>
+                                    </div>
+                                </div>
+
+                                <button class="hero-cta" type="button">CRIAR ROTA</button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
     <footer></footer>
-    
 </body>
 </html>
