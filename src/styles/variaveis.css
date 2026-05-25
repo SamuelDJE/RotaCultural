@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #E96049;
+    --secondary-color: #F1CE53;
+    --primary-complement-color: #7E91EB;
+    --secondary-complement-color: #FFDA89;
+    --background-color:#FFF5DE;
+
+    --neutral-white: #FFFFFF;
+    --neutral-black: #000000;
+    --neutral-gray: #DDDDDD;
+
+    --title-font: 'Oswald', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+
+    --title-forms-header-weight: 700;
+    --title-forms-header-size: 25px;
+
+    --title-hero-weight: 800;
+    --title-hero-size: 80px;
+
+    --paragraph-hero-weight: 800;
+    --paragraph-hero-size: 30px;
+
+    --text-forms-weight: 600;
+    --text-forms-size: 25px;
+
+    --btn-forms-hero-weight: 800;
+    --btn-forms-hero-size: 35px;
+
+    --links-nav-weight: 700;
+    --links-nav-size: 20px;
+}
