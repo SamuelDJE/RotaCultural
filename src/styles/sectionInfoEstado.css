@@ -1,0 +1,12 @@
+.info-estados{
+    margin-top: 20px;
+    
+}
+.titulo-escolha{
+    display: flex;
+    justify-content: left;
+}
+.mapa-interetivo{
+    display: flex;
+    justify-content: right;
+}
