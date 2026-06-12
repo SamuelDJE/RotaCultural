@@ -1,32 +1,225 @@
 :root{
-    --primary-color: #E96049;
-    --secondary-color: #F1CE53;
+    /* Colors principais */
+    --primary-color: #E2371A;
+    --secondary-color: #FCBE05;
     --primary-complement-color: #7E91EB;
-    --secondary-complement-color: #FFDA89;
-    --background-color:#FFF5DE;
+    --secondary-complement-color: #F1CE53;
+    --primary-color-footer: #FAB901;
 
+    /* cards colors */
+    --indigo-card-hospedagem: #6A4AFB;
+    --roxo-card-cult:#9638FB;
+    --card-tour:#FE6351;
+    --card-food:#FDBA04;
+
+
+    /* Colors backgrounds */
+    --background-color:#FFF5DE;
+    --background-color-principal:#061735;
+    --footer-footer-background-color: #00000019;
+
+    /* Neutral colors */
     --neutral-white: #FFFFFF;
     --neutral-black: #000000;
-    --neutral-gray: #DDDDDD;
+    --neutral-gray: #F3F3FA;
+    --neutral-dark-gray: #6E6E6E;
 
-    --title-font: 'Oswald', sans-serif;
-    --body-font: 'Poppins', sans-serif;
+    /* Gradiantes */
+    --color-gradiant-card-destino: #031050;
+    --gradiant-card-destino: linear-gradient(
+        180deg,
+        rgb(from var(--color-gradiant-card-destino) r g b / 19%) 0%,
+        rgb(from var(--color-gradiant-card-destino) r g b / 33%) 25.44%,
+        rgb(from var(--color-gradiant-card-destino) r g b / 47%) 30.77%,
+        rgb(from var(--color-gradiant-card-destino) r g b / 75%) 100%
+    );
 
-    --title-forms-header-weight: 700;
-    --title-forms-header-size: 25px;
+    --color-gradiant-card-infos: linear-gradient(
+        180deg,
+        #9D9D9D30 9.14%,
+        #000000BF 59.14%
+    );
 
-    --title-hero-weight: 800;
-    --title-hero-size: 80px;
 
-    --paragraph-hero-weight: 800;
-    --paragraph-hero-size: 30px;
+    /* Titulos */
+        /* Informativo */
+        --titleInformativo-font:'Inter', sans-serif;
+        --titleInformativo-weight: 700;
+        --titleInformativo-size: 32px;
+        --titleInformativo-line-height: 100%;
 
-    --text-forms-weight: 600;
-    --text-forms-size: 25px;
+        /* CardDestaque */
+        --titleCardDestaque-font:'Oswald', sans-serif;
+        --titleCardDestaque-weight: 500;
+        --titleCardDestaque-size: 25px;
 
-    --btn-forms-hero-weight: 800;
-    --btn-forms-hero-size: 35px;
+        /* Estados */
+        --titleInfoEstados-font:'Poppins', sans-serif;
+        --titleInfoEstados-weight: 500;
+        --titleInfoEstados-size: 48px;
 
-    --links-nav-weight: 700;
-    --links-nav-size: 20px;
+        /* CidadesInfo */
+        --titleCidadesInfo-font:'Inter', sans-serif;
+        --titleCidadesInfo-weight: 600;
+        --titleCidadesInfo-size: 36px;
+
+        /* CardCityInfo */
+        --titleCardCityInfo-font:'Oswald', sans-serif;
+        --titleCardCityInfo-weight: 400;
+        --titleCardCityInfo-size: 32px;
+
+        /* FooterContato */
+        --titleFooter-font:'Oswald', sans-serif;
+        --titleFooter-weight: 500;
+        --titleFooter-size: 32px;
+        --title-Footer-line-height: 20%;
+
+        /* FooterInstitucional */
+        --titleFooterInstitucional-font:'Oswald', sans-serif;
+        --titleFooterInstitucional-weight: 500;
+        --titleFooterInstitucional-size: 32px;
+        --titleFooterInstitucional-line-height: 20px;
+
+        /* cardDestino */
+        --titleCardDestino-font:'Oswald', sans-serif;
+        --titleCardDestino-weight: 400;
+        --titleCardDestino-size: 40px;
+
+        --subtitleCardDestino-font:'Oswald', sans-serif;
+        --subtitleCardDestino-weight: 400;
+        --subtitleCardDestino-size: 24px;
+
+        /* heroForms */
+        --titleHeroForms-font:'Oswald', sans-serif;
+        --titleHeroForms-weight: 500;
+        --titleHeroForms-size: 24px;
+
+        /* formsHeader */
+        --titleFormsHeader-font:'Oswald', sans-serif;
+        --titleFormsHeader-weight: 600;
+        --titleFormsHeader-size: 25px;
+
+        /* hero */
+        --titleHero-font:'Oswald', sans-serif;
+        --titleHero-weight: 700;
+        --titleHero-size: 80px;
+
+        /* titulo padrão */
+        --titlePadrao-font:'Oswald', sans-serif;
+        --titlePadrao-weight: 500;
+
+        /* CardInformativo */
+        --titleCardInformativo-font:'Oswald', sans-serif;
+        --titleCardInformativo-weight: 400;
+        --titleCardInformativo-size: 20px;
+        --titlecardInformativo-line-height: 100%;
+
+    /* Parágrafos */
+        /* cardInformativo */
+        --descInformativo-font:'Inter', sans-serif;
+        --descInformativo-weight: 400;
+        --descInformativo-size: 24px;
+        --descInformativo-line-height: 100%;
+
+        /* hero */
+        --texthero-font:'Inter', sans-serif;
+        --texthero-weight: 700;
+        --texthero-size: 30px;
+
+        --paragraphHero-font:'Poppins', sans-serif;
+        --paragraphHero-weight: 700;
+        --paragraphHero-size: 30px;
+
+        --textFormsHero-font:'Poppins', sans-serif;
+        --textFormsHero-weight: 600;
+        --textFormsHero-size: 25px;
+
+        /* cardDestaque */
+        --descCardDestaque-font:'Poppins', sans-serif;
+        --descCardDestaque-weight: 400;
+        --descCardDestaque-size: 12px;
+
+        /* infoEstados */
+        --descInfoEstados-font:'poppins', sans-serif;
+        --descInfoEstados-weight: 500;
+        --descInfoEstados-size: 20px;
+        --descInfoEstados-line-height: 100%;
+
+        /* cardCidadeInfo */
+        --descCardCidadeInfo-font:'inter', sans-serif;
+        --descCardCidadeInfo-weight: 400;
+        --descCardCidadeInfo-size: 20px;
+
+        /* cardCityInfo */
+        --descCardCityInfo-font:'poppins', sans-serif;
+        --descCardCityInfo-weight: 400;
+        --descCardCityInfo-size: 14px;
+
+        /* Footer */
+        --contatoFooter-font:'Poppins', sans-serif;
+        --contatoFooter-weight: 400;
+        --contatoFooter-size: 20px;
+        --contatoFooter-line-height: 20px;
+
+        --institucionalFooter-font:'Poppins', sans-serif;
+        --institucionalFooter-weight: 400;
+        --institucionalFooter-size: 20px;
+
+        --descLogoFooter-font:'Poppins', sans-serif;
+        --descLogoFooter-weight: 500;
+        --descLogoFooter-size: 32px;
+
+        /* Text */
+        --text-font:'Poppins', sans-serif;
+        --text-weight: 400;
+
+        /* CardInfo */
+        --descCardInfo-font:'Poppins', sans-serif;
+        --descCardInfo-weight: 400;
+        --descCardInfo-size: 16px;
+
+    /* outros */
+        /* navInfoEstados */
+        --navInfoEstados-font:'Oswald', sans-serif;
+        --navInfoEstados-weight: 500;
+        --navInfoEstados-size: 27px;
+
+        /* footer */
+        --direitosEtermosFooter-font:'Poppins', sans-serif;
+        --direitosEtermosFooter-weight: 400;
+        --direitosEtermosFooter-size: 13px;
+
+        /* hero */
+        --btnFormsHero-font:'Oswald', sans-serif;
+        --btnFormsHero-weight: 700;
+        --btnFormsHero-size: 35px;
+
+            /* navHero */
+            --links-nav-font:'Poppins', sans-serif;
+            --links-nav-weight: 700;
+            --links-nav-size: 20px;
+
+            /* formsHero */
+            --formHeroPlaceholder-font:'Oswald', sans-serif;
+            --formHeroPlaceholder-weight: 300;
+            --formHeroPlaceholder-size: 19px;
+
+        /* username */
+        --username-font:'Poppins', sans-serif;
+        --username-weight: 700;
+        --username-size: 35px;
+
+        /* cardDestaque */
+        --avaliacaoCardDestaque-font:'Poppins', sans-serif;
+        --avaliacaoCardDestaque-weight: 400;
+        --avaliacaoCardDestaque-size: 12px;
+
+        /* cardInfo */
+        --avaliacaoCardInfo-font:'Inter', sans-serif;
+        --avaliacaoCardInfo-weight: 400;
+        --avaliacaoCardInfo-size: 14px;
+
+        --verOpcoesCardInfo-font:'Inter', sans-serif;
+        --verOpcoesCardInfo-weight: 400;
+        --verOpcoesCardInfo-size: 20px;
 }
