@@ -1,12 +1,52 @@
-.info-estados{
-    margin-top: 20px;
-    
-}
-.titulo-escolha{
+/* Configuração principal do topo */
+.conteudo-top {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1748px 95px 0px 177px ; /* Ajuste o espaçamento conforme necessário */
 }
-.mapa-interetivo{
+
+/* Alinha o título e os estados um embaixo do outro */
+.lado-esquerdo {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    gap: 50px; /* Cria o espaço vertical entre o título e a lista de estados */
+}
+
+/* Ajustes finos nos textos do título */
+.Titulo-escolha h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    font-family: sans-serif; /* Use a fonte do seu projeto aqui */
+}
+
+.Titulo-escolha p {
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Lista de estados */
+.lista-estados {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px; /* Aumentei o espaço entre os nomes para bater com a foto */
+}
+
+.item-estado a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 27px;
+    padding-bottom: 8px; /* Espaço entre o texto e a linha cinza */
+    border-bottom: 2px solid #ccc; /* Linha cinza discreta para todos, igual na imagem */
+    display: inline-block;
+}
+
+/* Estado selecionado ganha a linha amarela por cima da cinza */
+.item-estado.ativo a {
+    color: #FCBE05;
+    border-bottom: 2px solid #FCBE05;
 }
