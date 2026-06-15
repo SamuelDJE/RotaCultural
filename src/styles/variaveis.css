@@ -22,7 +22,8 @@
     --neutral-white: #FFFFFF;
     --neutral-black: #000000;
     --neutral-gray: #F3F3FA;
-    --neutral-dark-gray: #6E6E6E;
+    --neutral-mid-gray:#6E6E6E;
+    --neutral-dark-gray:#454343;
 
     /* Gradiantes */
     --color-gradiant-card-destino: #031050;
@@ -125,7 +126,7 @@
         --texthero-font:'Inter', sans-serif;
         --texthero-weight: 700;
         --texthero-size: 30px;
-
+ 
         --paragraphHero-font:'Poppins', sans-serif;
         --paragraphHero-weight: 700;
         --paragraphHero-size: 30px;

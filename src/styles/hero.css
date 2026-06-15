@@ -1,6 +1,7 @@
 .hero {
 	background: var(--background-color-principal);
-	padding: 40px 80px 48px;
+	padding: 5px 50px;
+	margin-bottom:35px;
 }
 
 .hero-content {
@@ -12,7 +13,7 @@
 }
 
 .text-hero {
-	flex: 1;
+	max-width:750px;
 }
 
 .text-hero h1 {
@@ -20,8 +21,8 @@
 	font-weight: var(--titleHero-weight);
 	font-size: var(--titleHero-size);
 	color: var(--neutral-white);
-	line-height: 1;
 	text-transform: uppercase;
+	max-width: 715px;
 }
 
 .text-hero h1 span {
@@ -30,17 +31,16 @@
 
 .text-hero p {
 	font-family: var(--paragraphHero-font);
-	font-size: 18px;
-	font-weight: 400;
+	font-size: var(--paragraphHero-size);
+	font-weight: var(--paragraphHero-weight);
 	color: var(--neutral-white);
 	margin-top: 20px;
 	line-height: 1.5;
-	max-width: 380px;
+	max-width: 600px;
 }
 
 .hero-content > img {
-	width: 420px;
-	height: auto;
+
 	border-radius: 24px;
 }
 
