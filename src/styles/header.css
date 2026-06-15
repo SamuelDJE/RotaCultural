@@ -2,26 +2,69 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 16px;
-	padding: 18px 32px;
-	background: transparent;
+	padding: 18px 80px;
+	background: var(--background-color-principal);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header > img {
+	height: 44px;
 }
 
 .meio-header {
 	flex: 1;
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	justify-content: center;
 }
 
-.login-cadastro button {
-	margin-left: 8px;
-	padding: 8px 12px;
-	border-radius: 8px;
-	border: none;
+.meio-header nav ul {
+	list-style: none;
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.meio-header nav ul li a {
+	font-family: var(--links-nav-font);
+	font-weight: var(--links-nav-weight);
+	font-size: 16px;
+	color: var(--neutral-white);
+	text-decoration: none;
+}
+
+.meio-header nav ul li.ativo a {
+	color: var(--neutral-white);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.login-cadastro {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.login-cadastro button:first-child {
+	background: transparent;
+	border: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
+	padding: 8px 20px;
+	border-radius: 20px;
+	font-family: var(--links-nav-font);
+	font-weight: 600;
+	font-size: 14px;
 	cursor: pointer;
 }
 
-.hero-surface header img {
-	height: 44px;
+.login-cadastro button:last-child {
+	background: var(--secondary-color);
+	border: 2px solid var(--secondary-color);
+	color: var(--neutral-black);
+	padding: 8px 24px;
+	border-radius: 20px;
+	font-family: var(--links-nav-font);
+	font-weight: 700;
+	font-size: 14px;
+	cursor: pointer;
 }
-
