@@ -53,7 +53,7 @@
         /* CardDestaque */
         --titleCardDestaque-font:'Oswald', sans-serif;
         --titleCardDestaque-weight: 500;
-        --titleCardDestaque-size: 25px;
+        --titleCardDestaque-size: 40px;
 
         /* Estados */
         --titleInfoEstados-font:'Poppins', sans-serif;
@@ -139,7 +139,7 @@
         /* cardDestaque */
         --descCardDestaque-font:'Poppins', sans-serif;
         --descCardDestaque-weight: 400;
-        --descCardDestaque-size: 12px;
+        --descCardDestaque-size: 25px;
 
         /* infoEstados */
         --descInfoEstados-font:'poppins', sans-serif;

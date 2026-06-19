@@ -1,0 +1,126 @@
+/* ============================================
+    Destinos em destaque
+============================================ */
+.destinos-destaque {
+    background-color: var(--neutral-white);
+    padding: 60px 40px;
+}
+
+.ilustracao-rota img {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.cabecalho-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cabecalho-secao h2 {
+    font-family: var(--titleCardDestaque-font);
+    font-weight: var(--titleCardDestaque-weight);
+    font-size: var(--titleCardDestaque-size);
+    color: var(--background-color-principal);
+    margin-bottom: 10px;
+}
+
+.cabecalho-secao p {
+    font-family: var(--descCardDestaque-font);
+    font-weight: var(--descCardDestaque-weight);
+    font-size: var(--descCardDestaque-size);
+    color: var(--neutral-mid-gray);
+}
+
+.container-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card-destino {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    min-height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateZ(0);
+}
+
+.card-destino:hover {
+    transform: translateY(-6px);
+}
+
+.card-destino > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.conteudo-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--gradiant-card-destino);
+    padding: 20px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0 0 16px 16px;
+}
+
+.conteudo-card h3 {
+    font-family: var(--titleCardDestino-font);
+    font-weight: var(--titleCardDestino-weight);
+    font-size: var(--titleCardDestino-size);
+    color: var(--neutral-white);
+}
+
+.conteudo-card .categoria {
+    font-family: var(--subtitleCardDestino-font);
+    font-weight: var(--subtitleCardDestino-weight);
+    font-size: var(--subtitleCardDestino-size);
+    color: var(--neutral-white);
+    opacity: 0.85;
+}
+
+.conteudo-card .avaliacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--avaliacaoCardDestaque-font);
+    font-weight: var(--avaliacaoCardDestaque-weight);
+    font-size: var(--avaliacaoCardDestaque-size);
+    color: var(--neutral-white);
+    margin-bottom: 5px;
+}
+
+.icone-estrela {
+    font-size: 15px;
+}
+
+.btn-entrar {
+    background: var(--secondary-color);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 32px;
+    font-family: var(--links-nav-font);
+    font-weight: var(--links-nav-weight);
+    font-size: var(--links-nav-size);
+    cursor: pointer;
+    align-self: center;
+    margin-top: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn-entrar:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+}
