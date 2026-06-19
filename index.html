@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/assets/imgs/logo-rota.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="src/assets/imgs/logo/logo-rota.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +13,7 @@
 
     <title>Rota Cultural</title>
     <link rel="stylesheet" href="src/styles/global.css">
+    <script src="src/Scripts/infoEstados.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         Header/Hero
     ==========================================================-->
     <header>
-        <img src="src/assets/imgs/logo-rota.svg" alt="Logo Rota Cultural">
+        <img src="src/assets/imgs/logo/logo-rota.svg" alt="Logo Rota Cultural">
         <div class="meio-header">
             <nav>
                 <ul>
@@ -53,27 +54,27 @@
                     <h1>DESCUBRA CULTURAS<br>VIVA <span>EXPERIENCIAS</span></h1>
                     <p>Monte roteiros culturais inteligentes com gastronomia, hospedagem, atrações e avaliações reais.</p>
                 </div>
-                <img src="src/assets/imgs/heroImg.svg" alt="Menina sentada em barco">
+                <img src="src/assets/imgs/hero/heroImg.svg" alt="Menina sentada em barco">
             </div>
             <form class="hero-forms">
                 <div class="card-forms">
                     <h2>Para onde você vai?</h2>
                     <div>
-                        <img src="src/assets/imgs/mapaPinForms.svg" alt="Localização">
+                        <img src="src/assets/imgs/hero/mapaPinForms.svg" alt="Localização">
                         <input type="text" placeholder="Ex: Rio de Janeiro">
                     </div>
                 </div>
                 <div class="card-forms">
                     <h2>Quantos dias ficará?</h2>
                     <div>
-                        <img src="src/assets/imgs/calendario-hero-forms.svg" alt="Calendário">
+                        <img src="src/assets/imgs/hero/calendario-hero-forms.svg" alt="Calendário">
                         <input type="number" min="1" placeholder="Ex: 7">
                     </div>
                 </div>
                 <div class="card-forms">
                     <h2>Estilo de viagem?</h2>
                     <div>
-                        <img src="src/assets/imgs/emoji-hero-forms.svg" alt="Estilo">
+                        <img src="src/assets/imgs/hero/emoji-hero-forms.svg" alt="Estilo">
                         <select>
                             <option value="">Selecione</option>
                             <option value="cultural">Cultural</option>
@@ -91,9 +92,7 @@
             Destinos em destaque
         ======================================================= -->
         <section class="destinos-destaque">
-            <div class="ilustracao-rota">
-                <img src="src/assets/imgs/destino-destaque-aviao.svg" alt="Rota do avião">
-            </div>
+            <div class="ilustracao-rota" style="background-image: url('src/assets/imgs/destinos/destino-destaque-aviao.svg')"></div>
 
             <div class="cabecalho-secao">
                 <h2>Destinos em destaque</h2>
@@ -102,7 +101,7 @@
 
             <div class="container-cards">
                 <article class="card-destino">
-                    <img src="src/assets/imgs/card-sampa.svg" alt="São Paulo">
+                    <img src="src/assets/imgs/destinos/card-sampa.svg" alt="São Paulo">
                     <div class="conteudo-card">
                         <h3>São paulo</h3>
                         <p class="categoria">Cultura e Urbanização</p>
@@ -115,7 +114,7 @@
                 </article>
 
                 <article class="card-destino">
-                    <img src="src/assets/imgs/card-jordao.svg" alt="Campos do Jordão">
+                    <img src="src/assets/imgs/destinos/card-jordao.svg" alt="Campos do Jordão">
                     <div class="conteudo-card">
                         <h3>Campos do Jordão</h3>
                         <p class="categoria">Montanha e Natureza</p>
@@ -128,7 +127,7 @@
                 </article>
 
                 <article class="card-destino">
-                    <img src="src/assets/imgs/card-paraty.svg" alt="Paraty">
+                    <img src="src/assets/imgs/destinos/card-paraty.svg" alt="Paraty">
                     <div class="conteudo-card">
                         <h3>Paraty</h3>
                         <p class="categoria">História e Cultura</p>
@@ -141,7 +140,7 @@
                 </article>
 
                 <article class="card-destino">
-                    <img src="src/assets/imgs/card-capivari.svg" alt="Capivari">
+                    <img src="src/assets/imgs/destinos/card-capivari.svg" alt="Capivari">
                     <div class="conteudo-card">
                         <h3>Capivari</h3>
                         <p class="categoria">Atrações</p>
@@ -157,7 +156,7 @@
 
 
         <!-- =====================================================
-                    Escolha de estado e cidade 
+                    Escolha de estado e cidade
                 ======================================================= -->
         <section class="info-estados">
             <div class="conteudo-top">
@@ -173,8 +172,7 @@
                         <a href="#MT" class="aba-link" data-regiao="MT">Mato Grosso</a>
                     </div>
                 </div>
-                <div class="mapa-interativo"> <img id="mapa-interativo" src="/src/assets/imgs/mapaInterativo.svg"
-                        alt="Mapa Interativo"> </div>
+                <div class="mapa-interativo" style="background-image: url('src/assets/imgs/estados/mapaInterativo.svg')"></div>
             </div>
 
             <div class="conteudo-meio">
@@ -184,16 +182,130 @@
                 </div>
 
                 <div class="cards-cidades">
-                    <img src="/src/assets/imgs/itapevi.svg" alt="Itapevi">
-                    <h1>Itapevi</h1>
-                    <p class="descricao-cidade">Conexão, progresso e futuro.<br>
-                    <img src="/src/assets/imgs/estrela.svg" alt=""> </p>
+                    <article class="card-cidade">
+                        <img src="src/assets/imgs/estados/itapevi.svg" alt="Itapevi">
+                        <div class="info-card-cidade">
+                            <h3>Itapevi</h3>
+                            <p>Conexão, progresso e futuro.</p>
+                            <div class="avaliacao-cidade">
+                                <img src="src/assets/imgs/estados/estrela.svg" alt="">
+                                <span>4,5 100k avaliações</span>
+                            </div>
+                            <button class="btn-explorar">Explorar</button>
+                        </div>
+                    </article>
 
-                    <img src="/src/assets/imgs/osasco.svg" alt="Osasco">
-                    <img src="/src/assets/imgs/praiaGrande.svg" alt="Praia Grande">
+                    <article class="card-cidade card-cidade--destaque">
+                        <img src="src/assets/imgs/estados/osasco.svg" alt="Osasco">
+                        <img src="src/assets/imgs/estados/check-cidade.svg" alt="" class="badge-cidade">
+                        <div class="info-card-cidade">
+                            <h3>Osasco</h3>
+                            <p>Indústria, negócios e alma urbana.</p>
+                            <div class="avaliacao-cidade">
+                                <img src="src/assets/imgs/estados/estrela.svg" alt="">
+                                <span>4,3 90k avaliações</span>
+                            </div>
+                            <button class="btn-explorar">Explorar</button>
+                        </div>
+                    </article>
+
+                    <article class="card-cidade">
+                        <img src="src/assets/imgs/estados/praiaGrande.svg" alt="Praia Grande">
+                        <div class="info-card-cidade">
+                            <h3>Praia Grande</h3>
+                            <p>Sol, mar e diversão para toda família.</p>
+                            <div class="avaliacao-cidade">
+                                <img src="src/assets/imgs/estados/estrela.svg" alt="">
+                                <span>4,6 85k avaliações</span>
+                            </div>
+                            <button class="btn-explorar">Explorar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="conteudo-baixo">
+                <div class="detalhe-cidade">
+                    <img src="src/assets/imgs/estados/osasco-card-informativo.svg" alt="Osasco">
+                    <div class="texto-detalhe-cidade">
+                        <h2>Osasco, SP <img src="src/assets/imgs/estados/icon-card-informativo.svg" alt="" class="icon-card-info"></h2>
+                        <p>Uma cidade vibrante e em constante crescimento. Ideal para conhecer sua história, gastronomia e vida urbana.</p>
+                    </div>
                 </div>
 
+                <div class="cards-categorias">
+                    <article class="card-categoria" style="--cor-card: var(--indigo-card-hospedagem)">
+                        <div class="header-categoria">
+                            <img src="src/assets/imgs/estados/cama-icon.svg" alt="">
+                            <h3>Hospedagem</h3>
+                        </div>
+                        <p class="desc-categoria">Hotéis, pousadas e chalés para todos os estilos.</p>
+                        <div class="info-card-categoria">
+                            <img src="src/assets/imgs/estados/hospdagem-img.svg" alt="Hospedagem">
+                            <div class="avaliacao-card-categoria">
+                                <img src="src/assets/imgs/estados/moca-avaliacoes.svg" alt="" class="avatar-avaliador">
+                                <span>4,0 ★★★★</span>
+                                <span class="nome-avaliador">Sofia C.</span>
+                            </div>
+                            <p class="depoimento">"Pousada incrível, atendimento ótimo e vista maravilhosa"</p>
+                        </div>
+                        <a href="#" class="ver-opcoes">Ver opções →</a>
+                    </article>
 
+                    <article class="card-categoria" style="--cor-card: var(--card-tour)">
+                        <div class="header-categoria">
+                            <img src="src/assets/imgs/estados/camera-icon.svg" alt="">
+                            <h3>Pontos turísticos</h3>
+                        </div>
+                        <p class="desc-categoria">Parque, mirante, museus e lugares imperdíveis.</p>
+                        <div class="info-card-categoria">
+                            <img src="src/assets/imgs/estados/turistico-img.svg" alt="Turístico">
+                            <div class="avaliacao-card-categoria">
+                                <img src="src/assets/imgs/estados/moca-avaliacoes.svg" alt="" class="avatar-avaliador">
+                                <span>4,6 ★★★★★</span>
+                                <span class="nome-avaliador">Sofia C.</span>
+                            </div>
+                            <p class="depoimento">"Vista incrível, parecia cena de filme."</p>
+                        </div>
+                        <a href="#" class="ver-opcoes">Ver opções →</a>
+                    </article>
+
+                    <article class="card-categoria" style="--cor-card: var(--card-food)">
+                        <div class="header-categoria">
+                            <img src="src/assets/imgs/estados/comida-icon.svg" alt="">
+                            <h3>Comidas locais</h3>
+                        </div>
+                        <p class="desc-categoria">Sabores e restaurantes incríveis.</p>
+                        <div class="info-card-categoria">
+                            <img src="src/assets/imgs/estados/comida-img.svg" alt="Comida">
+                            <div class="avaliacao-card-categoria">
+                                <img src="src/assets/imgs/estados/moca-avaliacoes.svg" alt="" class="avatar-avaliador">
+                                <span>4,6 ★★★★★</span>
+                                <span class="nome-avaliador">Sofia C.</span>
+                            </div>
+                            <p class="depoimento">"Nossa, o cachorro quente deles é super animado!"</p>
+                        </div>
+                        <a href="#" class="ver-opcoes">Ver opções →</a>
+                    </article>
+
+                    <article class="card-categoria" style="--cor-card: var(--roxo-card-cult)">
+                        <div class="header-categoria">
+                            <img src="src/assets/imgs/estados/nota-musical-icon.svg" alt="">
+                            <h3>Cultura e eventos</h3>
+                        </div>
+                        <p class="desc-categoria">Festivais e tradições locais.</p>
+                        <div class="info-card-categoria">
+                            <img src="src/assets/imgs/estados/evento-img.svg" alt="Eventos">
+                            <div class="avaliacao-card-categoria">
+                                <img src="src/assets/imgs/estados/moca-avaliacoes.svg" alt="" class="avatar-avaliador">
+                                <span>4,8 ★★★★★</span>
+                                <span class="nome-avaliador">Sofia C.</span>
+                            </div>
+                            <p class="depoimento">"As festas são super animadas!"</p>
+                        </div>
+                        <a href="#" class="ver-opcoes">Ver opções →</a>
+                    </article>
+                </div>
             </div>
 
         </section>
@@ -205,7 +317,7 @@
     <footer>
         <div class="conteudo-footer-topo">
             <div class="lado-esquerdo">
-                <img src="src/assets/imgs/logo-completo.svg" alt="Logo Rota Cultural" class="logo-completo">
+                <div class="logo-completo" style="background-image: url('src/assets/imgs/logo/logo-completo.svg')"></div>
                 <h1>
                     Novos destinos,<br>
                     novos caminhos, <br>
@@ -226,15 +338,15 @@
                     <h2>Contato</h2>
                     <ul>
                         <li>
-                            <img src="src/assets/imgs/contato-icon.svg" alt="Telefone">
+                            <img src="src/assets/imgs/footer/contato-icon.svg" alt="Telefone">
                             <a href="#">SAC<br>0800 0400 7896</a>
                         </li>
                         <li>
-                            <img src="src/assets/imgs/email-icon.svg" alt="E-mail">
+                            <img src="src/assets/imgs/footer/email-icon.svg" alt="E-mail">
                             <a href="#">E-mail<br>rotacultural@gmail.com</a>
                         </li>
                         <li>
-                            <img src="src/assets/imgs/fone-icon.svg" alt="Ajuda">
+                            <img src="src/assets/imgs/footer/fone-icon.svg" alt="Ajuda">
                             <a href="#">Central de ajuda<br>Perguntas Frequentes</a>
                         </li>
                     </ul>
@@ -245,9 +357,9 @@
             <div class="conteudo-footer-baixo">
 
                 <div class="redes-sociais">
-                    <img src="src/assets/imgs/face-icon.svg" alt="Facebook">
-                    <img src="src/assets/imgs/tiktok-icon.svg" alt="TikTok">
-                    <img src="src/assets/imgs/insta-icon.svg" alt="Instagram">
+                    <img src="src/assets/imgs/footer/face-icon.svg" alt="Facebook">
+                    <img src="src/assets/imgs/footer/tiktok-icon.svg" alt="TikTok">
+                    <img src="src/assets/imgs/footer/insta-icon.svg" alt="Instagram">
                 </div>
 
                 <div class="direitos">

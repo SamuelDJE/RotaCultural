@@ -6,9 +6,12 @@
     padding: 60px 40px;
 }
 
-.ilustracao-rota img {
+.ilustracao-rota {
     width: 100%;
-    display: block;
+    height: 186px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 50px;
 }
 
@@ -26,9 +29,9 @@
 }
 
 .cabecalho-secao p {
-    font-family: var(--descCardDestaque-font);
-    font-weight: var(--descCardDestaque-weight);
-    font-size: var(--descCardDestaque-size);
+    font-family: var(--subtitleCardDestaque-font);
+    font-weight: var(--subtitleCardDestaque-weight);
+    font-size: var(--subtitleCardDestaque-size);
     color: var(--neutral-mid-gray);
 }
 
@@ -83,9 +86,9 @@
 }
 
 .conteudo-card .categoria {
-    font-family: var(--subtitleCardDestino-font);
-    font-weight: var(--subtitleCardDestino-weight);
-    font-size: var(--subtitleCardDestino-size);
+    font-family: var(--descCardDestaque-font);
+    font-weight: var(--descCardDestaque-weight);
+    font-size: var(--descCardDestaque-size);
     color: var(--neutral-white);
     opacity: 0.85;
 }
