@@ -6,9 +6,12 @@
     padding: 60px 40px;
 }
 
-.ilustracao-rota img {
+.ilustracao-rota {
     width: 100%;
-    display: block;
+    height: 186px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 50px;
 }
 

@@ -22,6 +22,10 @@ footer{
 }
 .logo-completo{
     width: 550px;
+    height: 173px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 /* Conteúdo do lado esquerdo do footer */
 .lado-esquerdo{
