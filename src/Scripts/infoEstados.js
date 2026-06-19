@@ -117,7 +117,7 @@ const dados = {
       },
       {
         id: "petropolis",
-        nome: "Nitoroi",
+        nome: "Niteroi",
         img: "src/assets/imgs/estados/NITEROI.svg",
         desc: "A cidade imperial na Serra Fluminense.",
         avaliacao: "4,7",
