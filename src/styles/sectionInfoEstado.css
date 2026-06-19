@@ -125,6 +125,11 @@
     transform: translateY(-4px) translateZ(0);
 }
 
+.card-cidade--selecionada {
+    border: 4px solid var(--secondary-color);
+    box-shadow: 0 4px 28px rgba(252, 190, 5, 0.5);
+}
+
 .card-cidade > img:first-child {
     position: absolute;
     inset: 0;
