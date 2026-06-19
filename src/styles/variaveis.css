@@ -71,10 +71,10 @@
         --titleCardCityInfo-size: 32px;
 
         /* FooterContato */
-        --titleFooter-font:'Oswald', sans-serif;
-        --titleFooter-weight: 500;
-        --titleFooter-size: 32px;
-        --title-Footer-line-height: 20%;
+        --titleContato-font:'Oswald', sans-serif;
+        --titleContato-weight: 500;
+        --titleContato-size: 32px;
+        --titleContato-line-height: 20%;
 
         /* FooterInstitucional */
         --titleFooterInstitucional-font:'Oswald', sans-serif;
