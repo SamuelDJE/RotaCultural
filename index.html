@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="src/assets/imgs/logo-rota.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <title>Rota Cultural</title>
     <link rel="stylesheet" href="src/styles/global.css">
@@ -86,7 +88,7 @@
         ======================================================= -->
         <section class="destinos-destaque">
             <div class="ilustracao-rota">
-                <img src="src/assets/imgs/aviao.svg" alt="Rota do avião">
+                <img src="src/assets/imgs/destino-destaque-aviao.svg" alt="Rota do avião">
             </div>
 
             <div class="cabecalho-secao">
@@ -147,37 +149,43 @@
 
 
         <!-- =====================================================
-            Escolha de estado e cidade
-        ======================================================= -->
+                    Escolha de estado e cidade 
+                ======================================================= -->
         <section class="info-estados">
             <div class="conteudo-top">
-                <div class="conteudo-esquerda">
+                <div class="conteudo-esquerda-top">
                     <div class="Titulo-escolha">
                         <h1>Escolha um estado</h1>
-                        <p>Descubra cidades incríveis, viva experiências únicas.</p><br><br><br>
+                        <p>Descubra cidades incríveis, viva experiências únicas.</p>
                     </div>
-                    <nav class="estados-navegacao">
-                        <ul class="lista-estados">
-                            <li class="item-estado ativo"><a href="#">São Paulo</a></li>
-                            <li class="item-estado"><a href="#">Minas Gerais</a></li>
-                            <li class="item-estado"><a href="#">Rio de Janeiro</a></li>
-                            <li class="item-estado"><a href="#">Mato Grosso</a></li>
-                        </ul>
-                    </nav>
+                    <div class="gerenciador-estados">
+                        <a href="#SP" class="aba-link active" data-regiao="SP">São Paulo</a>
+                        <a href="#MG" class="aba-link" data-regiao="MG">Minas Gerais</a>
+                        <a href="#RJ" class="aba-link" data-regiao="RJ">Rio de Janeiro</a>
+                        <a href="#MT" class="aba-link" data-regiao="MT">Mato Grosso</a>
+                    </div>
                 </div>
-                <div class="mapa-interativo">
-                    <img src="src/assets/imgs/mapaInterativo.svg" alt="Mapa interativo">
-                </div>
-
-
+                <div class="mapa-interativo"> <img id="mapa-interativo" src="/src/assets/imgs/mapaInterativo.svg"
+                        alt="Mapa Interativo"> </div>
             </div>
 
-            <div class="sub-titulo-escolha" id="cidade-SP">
-                <h1>Cidades famosas em <span>São Paulo</span></h1>
-                <h2>Explore o melhor que São Paulo tem a oferecer.</h2>
-                <img src="src/assets/imgs/itapevi.svg" alt="Itapevi">
-                <img src="src/assets/imgs/osasco.svg" alt="Osasco">
-                <img src="src/assets/imgs/praiaGrande.svg" alt="Praia Grande">
+            <div class="conteudo-meio">
+                <div class="titulo-cidade">
+                    <h1>Cidades famosas em <span>São Paulo</span></h1>
+                    <p>Explore o melhor que São Paulo tem a oferecer.</p>
+                </div>
+
+                <div class="cards-cidades">
+                    <img src="/src/assets/imgs/itapevi.svg" alt="Itapevi">
+                    <h1>Itapevi</h1>
+                    <p class="descricao-cidade">Conexão, progresso e futuro.<br>
+                    <img src="/src/assets/imgs/estrela.svg" alt=""> </p>
+
+                    <img src="/src/assets/imgs/osasco.svg" alt="Osasco">
+                    <img src="/src/assets/imgs/praiaGrande.svg" alt="Praia Grande">
+                </div>
+
+
             </div>
 
         </section>
@@ -187,9 +195,9 @@
         Footer
     ==========================================================-->
     <footer>
-        <div class="conteudo-footer">
+        <div class="conteudo-footer-topo">
             <div class="lado-esquerdo">
-                <img src="src/assets/imgs/logo-completo.svg" alt="Logo Rota Cultural">
+                <img src="src/assets/imgs/logo-completo.svg" alt="Logo Rota Cultural" class="logo-completo">
                 <h1>
                     Novos destinos,<br>
                     novos caminhos, <br>
@@ -205,23 +213,43 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
+                <div class="linha-vertical"></div>
                 <div class="contato">
                     <h2>Contato</h2>
                     <ul>
                         <li>
                             <img src="src/assets/imgs/contato-icon.svg" alt="Telefone">
-                            <a href="#">SAC<br>0800 0400 7896</a></li>
+                            <a href="#">SAC<br>0800 0400 7896</a>
+                        </li>
                         <li>
                             <img src="src/assets/imgs/email-icon.svg" alt="E-mail">
-                            <a href="#">E-mail<br>rotacultural@gmail.com</a></li>
+                            <a href="#">E-mail<br>rotacultural@gmail.com</a>
+                        </li>
                         <li>
                             <img src="src/assets/imgs/fone-icon.svg" alt="Ajuda">
-                            <a href="#">Central de ajuda<br>Perguntas Frequentes</a></li>
+                            <a href="#">Central de ajuda<br>Perguntas Frequentes</a>
+                        </li>
                     </ul>
                 </div>
 
-                <div></div>
+            </div>
         </div>
+            <div class="conteudo-footer-baixo">
+
+                <div class="redes-sociais">
+                    <img src="src/assets/imgs/face-icon.svg" alt="Facebook">
+                    <img src="src/assets/imgs/tiktok-icon.svg" alt="TikTok">
+                    <img src="src/assets/imgs/insta-icon.svg" alt="Instagram">
+                </div>
+
+                <div class="direitos">
+                    <p>© 2026 - <span>RotaCultural</span> - Todos os direitos reservados</p>
+                    <div class="grupo-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                </div>
+
     </footer>
 
 </body>

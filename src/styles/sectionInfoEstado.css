@@ -1,13 +1,15 @@
-/* Configuração principal do topo */
+/*============================================= 
+    Configuração do topo 
+=============================================*/
 .conteudo-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 1748px 95px 0px 177px ; /* Ajuste o espaçamento conforme necessário */
 }
 
 /* Alinha o título e os estados um embaixo do outro */
-.lado-esquerdo {
+.conteudo-esquerda-top {
     display: flex;
     flex-direction: column;
     gap: 50px; /* Cria o espaço vertical entre o título e a lista de estados */
@@ -15,38 +17,76 @@
 
 /* Ajustes finos nos textos do título */
 .Titulo-escolha h1 {
-    font-size: 48px;
-    margin-bottom: 8px;
-    font-family: sans-serif; /* Use a fonte do seu projeto aqui */
+    font-size: var(--titleInfoEstados-size);
+    font-family: var(--titleInfoEstados-font);
+    font-weight: var(--titleInfoEstados-weight);
+    color: var(--neutral-black);
+    margin-bottom: 8px; /* Espaço entre o título e o subtítulo */
 }
 
 .Titulo-escolha p {
-    color: #000;
-    font-size: 20px;
-    margin: 0;
+    font-size: var( --descInfoEstados-size);
+    font-family: var( --descInfoEstados-font);
+    font-weight: var(--descInfoEstados-weight);
+    color: var(--neutral-black);
+
 }
 
 /* Lista de estados */
-.lista-estados {
+.gerenciador-estados {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     gap: 40px; /* Aumentei o espaço entre os nomes para bater com a foto */
 }
 
-.item-estado a {
+.aba-link {
+    font-weight: var( --navInfoEstados-weight);
+    font-size: var(--navInfoEstados-size);
+    font-family: var(--navInfoEstados-font);
+    color: var(--neutral-NeutralGray);
     text-decoration: none;
-    color: #666;
-    font-weight: bold;
-    font-size: 27px;
-    padding-bottom: 8px; /* Espaço entre o texto e a linha cinza */
-    border-bottom: 2px solid #ccc; /* Linha cinza discreta para todos, igual na imagem */
-    display: inline-block;
+    white-space: nowrap; /*Impede que o texto quebre em várias linhas*/
 }
 
 /* Estado selecionado ganha a linha amarela por cima da cinza */
-.item-estado.ativo a {
-    color: #FCBE05;
-    border-bottom: 2px solid #FCBE05;
+.aba-link.active {
+    color: var(--secondary-color); 
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.aba-link.active::after{
+    content:"";/* Cria um elemento após o link ativo */
+
+    height: 2px; /* Define a altura da linha */
+    background-color: var(--secondary-color); /* Cor da linha amarela */
+    
+}
+
+/*===========================
+    Configuração do meio
+============================*/
+.conteudo-meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px; 
+}
+.titulo-cidade h1{
+    font-size: var(--titleCidadesInfo-size);
+    font-family: var(--titleCidadesInfo-font);
+    font-weight: var(--titleCidadesInfo-weight);
+    color: var(--neutral-black);
+}
+.titulo-cidade span{
+    color: var(--secondary-color);
+}
+.titulo-cidade p{
+    font-size: var(--descCidadeInfo-size);
+    font-family: var(--descCidadeInfo-font);
+    font-weight: var(--descCidadeInfo-weight);
+    color: var(--neutral-NeutralGray);
+    text-align: center;
+}
+.cards-cidades{
+    display: flex;
+    gap:53px;
 }
