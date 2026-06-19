@@ -1,92 +1,368 @@
-/*============================================= 
-    Configuração do topo 
-=============================================*/
+/* =============================================
+    Configuração do topo
+============================================= */
 .conteudo-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px 95px 0px 177px;
+    margin: 80px 95px 0 177px;
 }
 
-/* Alinha o título e os estados um embaixo do outro */
 .conteudo-esquerda-top {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* Cria o espaço vertical entre o título e a lista de estados */
+    gap: 50px;
 }
 
-/* Ajustes finos nos textos do título */
 .Titulo-escolha h1 {
     font-size: var(--titleInfoEstados-size);
     font-family: var(--titleInfoEstados-font);
     font-weight: var(--titleInfoEstados-weight);
     color: var(--neutral-black);
-    margin-bottom: 8px; /* Espaço entre o título e o subtítulo */
+    margin-bottom: 8px;
 }
 
 .Titulo-escolha p {
-    font-size: var( --descInfoEstados-size);
-    font-family: var( --descInfoEstados-font);
+    font-size: var(--descInfoEstados-size);
+    font-family: var(--descInfoEstados-font);
     font-weight: var(--descInfoEstados-weight);
     color: var(--neutral-black);
-
 }
 
-/* Lista de estados */
 .gerenciador-estados {
     display: flex;
-    gap: 40px; /* Aumentei o espaço entre os nomes para bater com a foto */
+    gap: 40px;
 }
 
 .aba-link {
-    font-weight: var( --navInfoEstados-weight);
+    font-weight: var(--navInfoEstados-weight);
     font-size: var(--navInfoEstados-size);
     font-family: var(--navInfoEstados-font);
     color: var(--neutral-NeutralGray);
     text-decoration: none;
-    white-space: nowrap; /*Impede que o texto quebre em várias linhas*/
+    white-space: nowrap;
 }
 
-/* Estado selecionado ganha a linha amarela por cima da cinza */
 .aba-link.active {
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
 
-.aba-link.active::after{
-    content:"";/* Cria um elemento após o link ativo */
-
-    height: 2px; /* Define a altura da linha */
-    background-color: var(--secondary-color); /* Cor da linha amarela */
-    
+.aba-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
-/*===========================
+.aba-link:hover {
+    color: var(--secondary-color);
+    transform: translateY(-4px);
+}
+
+.mapa-interativo {
+    width: 280px;
+    height: 210px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* =============================================
     Configuração do meio
-============================*/
-.conteudo-meio{
+============================================= */
+.conteudo-meio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 53px; 
+    gap: 50px;
+    margin: 60px 0;
 }
-.titulo-cidade h1{
+
+.titulo-cidade {
+    text-align: center;
+}
+
+.titulo-cidade h1 {
     font-size: var(--titleCidadesInfo-size);
     font-family: var(--titleCidadesInfo-font);
     font-weight: var(--titleCidadesInfo-weight);
     color: var(--neutral-black);
+    margin-bottom: 8px;
 }
-.titulo-cidade span{
+
+.titulo-cidade span {
     color: var(--secondary-color);
 }
-.titulo-cidade p{
+
+.titulo-cidade p {
     font-size: var(--descCidadeInfo-size);
     font-family: var(--descCidadeInfo-font);
     font-weight: var(--descCidadeInfo-weight);
     color: var(--neutral-NeutralGray);
     text-align: center;
 }
-.cards-cidades{
+
+/* Cards de cidades */
+.cards-cidades {
     display: flex;
-    gap:53px;
+    gap: 30px;
+    align-items: center;
+}
+
+.card-cidade {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 360px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateZ(0);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-cidade:hover {
+    transform: translateY(-4px) translateZ(0);
+}
+
+.card-cidade > img:first-child {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-cidade--destaque {
+    width: 240px;
+    height: 420px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 4px 24px rgba(252, 190, 5, 0.35);
+}
+
+.badge-cidade {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.info-card-cidade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-gradiant-card-infos);
+    padding: 12px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0 0 20px 20px;
+}
+
+.info-card-cidade h3 {
+    font-family: var(--titleCardCityInfo-font);
+    font-weight: var(--titleCardCityInfo-weight);
+    font-size: var(--titleCardCityInfo-size);
+    color: var(--neutral-white);
+}
+
+.info-card-cidade p {
+    font-family: var(--descCardCityInfo-font);
+    font-weight: var(--descCardCityInfo-weight);
+    font-size: var(--descCardCityInfo-size);
+    color: var(--neutral-white);
+    opacity: 0.8;
+}
+
+.avaliacao-cidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 4px 0 8px;
+}
+
+.avaliacao-cidade img {
+    width: 15px;
+    height: auto;
+}
+
+.avaliacao-cidade span {
+    font-family: var(--avaliacaoCardDestaque-font);
+    font-size: var(--avaliacaoCardDestaque-size);
+    color: var(--neutral-white);
+    opacity: 0.85;
+}
+
+.btn-explorar {
+    background: var(--secondary-color);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-family: var(--links-nav-font);
+    font-weight: var(--links-nav-weight);
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn-explorar:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* =============================================
+    Configuração do baixo
+============================================= */
+.conteudo-baixo {
+    margin: 0 95px 80px 177px;
+    background: var(--neutral-gray);
+    border-radius: 20px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Detalhe da cidade selecionada */
+.detalhe-cidade {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.detalhe-cidade > img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.texto-detalhe-cidade h2 {
+    font-family: var(--titleInfoEstados-font);
+    font-weight: var(--titleInfoEstados-weight);
+    font-size: 28px;
+    color: var(--neutral-black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+
+.texto-detalhe-cidade p {
+    font-family: var(--descInfoEstados-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--neutral-mid-gray);
+    max-width: 520px;
+}
+
+/* Cards de categorias */
+.cards-categorias {
+    display: flex;
+    gap: 20px;
+}
+
+.card-categoria {
+    flex: 1;
+    background: var(--neutral-white);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header-categoria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-categoria img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-categoria h3 {
+    font-family: var(--titleCardInformativo-font);
+    font-weight: var(--titleCardInformativo-weight);
+    font-size: var(--titleCardInformativo-size);
+    color: var(--neutral-black);
+}
+
+.desc-categoria {
+    font-family: var(--descCardInfo-font);
+    font-weight: var(--descCardInfo-weight);
+    font-size: var(--descCardInfo-size);
+    color: var(--neutral-mid-gray);
+}
+
+.info-card-categoria > img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 4px 0;
+}
+
+.avaliacao-card-categoria {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.avatar-avaliador {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.avaliacao-card-categoria span {
+    font-family: var(--avaliacaoCardInfo-font);
+    font-weight: var(--avaliacaoCardInfo-weight);
+    font-size: var(--avaliacaoCardInfo-size);
+    color: var(--neutral-black);
+}
+
+.nome-avaliador {
+    color: var(--neutral-mid-gray) !important;
+    margin-left: auto;
+}
+
+.depoimento {
+    font-family: var(--descCardInfo-font);
+    font-weight: var(--descCardInfo-weight);
+    font-size: var(--descCardInfo-size);
+    color: var(--neutral-mid-gray);
+    font-style: italic;
+}
+
+.ver-opcoes {
+    font-family: var(--verOpcoesCardInfo-font);
+    font-weight: var(--verOpcoesCardInfo-weight);
+    font-size: var(--verOpcoesCardInfo-size);
+    color: var(--cor-card);
+    margin-top: auto;
+    transition: opacity 0.2s ease;
+}
+
+.ver-opcoes:hover { opacity: 0.75; text-decoration: underline; }
+
+.icon-card-info {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+    cursor: pointer;
 }
